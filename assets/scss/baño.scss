@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.fondo-baño {
+	background: url(../../img/fotobaño2.jpg) no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+.titulo-baño {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	font-size: 100px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.ventas {
+	background-color: burlywood;
+}
+
+.productosC {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.productosC-container {
+	margin: 15px;
+	padding: 2px 16px;
+	position: relative;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
+	img {
+		width: 300px;
+	}
+	h4 {
+		margin-left: 30px;
+		margin-bottom: 12px;
+	}
+}
+
+.productosC-container:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+	transition: all 0.4s ease 0s;
+}
+
+.boton-carrito {
+	font-size: 16px;
+	background-color: white;
+	color: black;
+	border: 2px solid silver;
+	border-radius: 8px;
+	padding: 8px 16px;
+	text-align: center;
+	transition-duration: 0.4s;
+	position: absolute;
+	right: 15px;
+	bottom: 3px;
+}
+
+.boton-carrito:hover {
+	background-color: silver;
+	color: black;
+}

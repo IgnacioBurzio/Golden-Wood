@@ -1,0 +1,25 @@
+@mixin flexCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer {
+	text-align: center;
+	background: linear-gradient(gray, lightblue);
+}
+
+#contacto > * {
+	margin: 1em 0;
+}
+
+.contacto-lista {
+	@include flexCenter();
+}
+
+.contacto-redes {
+	@include flexCenter();
+	text-align: center;
+	padding: 2em 0;
+}
