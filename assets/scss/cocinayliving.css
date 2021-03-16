@@ -7,21 +7,23 @@
 }
 
 .fondo-cocina {
-  background: url(../../img/fotococina.jpg) no-repeat;
+  background: url(../../img/cocina.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
 }
 
 .titulo-cocina {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
-  font-size: 100px;
+  font-size: 140px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 .ventas {
@@ -32,11 +34,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f0;
 }
 
 .productosB-container {
@@ -82,5 +83,68 @@
 .boton-carrito:hover {
   background-color: silver;
   color: black;
+}
+
+.large {
+  display: none;
+}
+
+.medium {
+  display: none;
+}
+
+.small {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .large {
+    display: none;
+  }
+  .medium {
+    display: none;
+  }
+  .small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .xsmall {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .large {
+    display: none;
+  }
+  .medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .small {
+    display: none;
+  }
+  .xsmall {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .medium {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+  .xsmall {
+    display: none;
+  }
 }
 /*# sourceMappingURL=cocinayliving.css.map */

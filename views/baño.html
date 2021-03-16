@@ -28,6 +28,50 @@
 		></script>
 	</head>
 	<body>
+		<!--mobile-->
+		<header id="mobile">
+			<div class="dropdown desplegable_caja">
+				<div class="logo-mobile">
+					<img class="rounded-circle" src="../img/logo.jpg" />
+				</div>
+				<div class="buscar-mobile">
+					<input
+						class="buscador"
+						type="search"
+						name="buscador"
+						placeholder="Producto..."
+					/>
+					<input
+						class="boton"
+						type="submit"
+						value="Buscar"
+						placeholder="Producto..."
+					/>
+				</div>
+				<button
+					class="btn btn-secondary dropdown-toggle boton-desplegable"
+					type="button"
+					id="dropdownMenuButton"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
+				<div
+					class="dropdown-menu menu-desplegable"
+					aria-labelledby="dropdownMenuButton"
+				>
+					<a class="dropdown-item" href="../index.html">Home</a>
+					<a class="dropdown-item" href="./nosotros.html">Nosotros</a>
+					<a class="dropdown-item" href="./dormitorio.html">Dormitorio</a>
+					<a class="dropdown-item" href="./cocinayliving.html">Cocina y living</a>
+					<a class="dropdown-item" href="./baño.html">Baño</a>
+				</div>
+			</div>
+		</header>
+
+		<!--desktop-->
 		<header id="desktop">
 			<div class="logo-desktop">
 				<img src="../img/logo.jpg" />
@@ -60,141 +104,774 @@
 			<h1 class="titulo-baño">Baño</h1>
 		</div>
 
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="productosC">
-						<div class="productosC-container">
-							<h4>Armario Winter</h4>
-							<img src="../img/baño/armario.webp" />
-							<h4>$3000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
+		<div id="row-1">
+			<!-- 1440 Estante - gabinete -->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide large"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Estante Gina</h4>
+								<img src="../img/baño/estante1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-						<div class="productosC-container">
-							<h3>Armario Summer</h3>
-							<img src="../img/baño/armario2.webp" />
-							<h4>$3000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
+							<div class="productosC-container">
+								<h3>Estante Mel</h3>
+								<img src="../img/baño/estante2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-						<div class="productosC-container">
-							<h3>Banco</h3>
-							<img src="../img/baño/banco.webp" />
-							<h4>$900</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
+							<div class="productosC-container">
+								<h3>Estante Diana</h3>
+								<img src="../img/baño/estante3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-						<div class="productosC-container">
-							<h3>Carrito</h3>
-							<img src="../img/baño/carrito.webp" />
-							<h4>$10000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
+							<div class="productosC-container">
+								<h3>Estante Hilda</h3>
+								<img src="../img/baño/gabinete1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Eva</h4>
+								<img src="../img/baño/gabinete2.webp" />
+								<h4>$5000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-						<div class="productosC-container">
-							<h4>Espejo</h4>
-							<img src="../img/baño/espejo.webp" />
-							<h4>$2200</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
+							<div class="productosC-container">
+								<h3>Gabinete Karime</h3>
+								<img src="../img/baño/gabinete3.webp" />
+								<h4>$7000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Yalena</h3>
+								<img src="../img/baño/gabinete4.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+							<div class="productosC-container">
+								<h3>Gabinete Dana</h3>
+								<img src="../img/baño/gabinete5.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item">
-					<div class="productosC">
-						<div class="productosC-container">
-							<h4>Armario Winter</h4>
-							<img src="../img/baño/armario.webp" />
-							<h4>$3000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h3>Armario Summer</h3>
-							<img src="../img/baño/armario2.webp" />
-							<h4>$3000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h3>Banco</h3>
-							<img src="../img/baño/banco.webp" />
-							<h4>$900</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h3>Carrito</h3>
-							<img src="../img/baño/carrito.webp" />
-							<h4>$10000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h4>Espejo</h4>
-							<img src="../img/baño/espejo.webp" />
-							<h4>$2200</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="productosC">
-						<div class="productosC-container">
-							<h4>Armario Winter</h4>
-							<img src="../img/baño/armario.webp" />
-							<h4>$3000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h3>Armario Summer</h3>
-							<img src="../img/baño/armario2.webp" />
-							<h4>$3000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h3>Banco</h3>
-							<img src="../img/baño/banco.webp" />
-							<h4>$900</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h3>Carrito</h3>
-							<img src="../img/baño/carrito.webp" />
-							<h4>$10000</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-
-						<div class="productosC-container">
-							<h4>Espejo</h4>
-							<img src="../img/baño/espejo.webp" />
-							<h4>$2200</h4>
-							<button class="boton-carrito">Agregar al carrito</button>
-						</div>
-					</div>
-				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<a
-				class="carousel-control-prev"
-				href="#carouselExampleControls"
-				role="button"
-				data-slide="prev"
+			<!-- 1024 Estante - gabinete-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide medium"
+				data-ride="carousel"
 			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a
-				class="carousel-control-next"
-				href="#carouselExampleControls"
-				role="button"
-				data-slide="next"
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Cama Angélica</h4>
+								<img src="../img/baño/estante1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Estante Mel</h3>
+								<img src="../img/baño/estante2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Estante Diana</h3>
+								<img src="../img/baño/estante3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Hilda</h4>
+								<img src="../img/baño/gabinete1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Eva</h3>
+								<img src="../img/baño/gabinete2.webp" />
+								<h4>$5000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Karime</h3>
+								<img src="../img/baño/gabinete3.webp" />
+								<h4>$7000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Yalena</h4>
+								<img src="../img/baño/gabinete4.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Dana</h3>
+								<img src="../img/baño/gabinete5.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 768 Estante - gabinete-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide small"
+				data-ride="carousel"
 			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Cama Angélica</h4>
+								<img src="../img/baño/estante1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Estante Mel</h3>
+								<img src="../img/baño/estante2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Estante Diana</h4>
+								<img src="../img/baño/estante3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Hilda</h3>
+								<img src="../img/baño/gabinete1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Eva</h4>
+								<img src="../img/baño/gabinete2.webp" />
+								<h4>$5000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Karime</h3>
+								<img src="../img/baño/gabinete3.webp" />
+								<h4>$7000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Yalena</h4>
+								<img src="../img/baño/gabinete4.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Gabinete Dana</h3>
+								<img src="../img/baño/gabinete5.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 425 Estante - gabinete -->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide xsmall"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Cama Angélica</h4>
+								<img src="../img/baño/estante1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Estante Mel</h4>
+								<img src="../img/baño/estante2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Estante Diana</h4>
+								<img src="../img/baño/estante3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Hilda</h4>
+								<img src="../img/baño/gabinete1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Eva</h4>
+								<img src="../img/baño/gabinete2.webp" />
+								<h4>$5000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Karime</h4>
+								<img src="../img/baño/gabinete3.webp" />
+								<h4>$7000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Yalena</h4>
+								<img src="../img/baño/gabinete5.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Gabinete Dana</h4>
+								<img src="../img/baño/gabinete5.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="row-2">
+			<!-- 1440 Set -->
+			<div
+				id="carouselExampleControls2"
+				class="carousel slide large"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Celeste</h4>
+								<img src="../img/baño/set1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Oriana</h3>
+								<img src="../img/baño/set2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Mali</h3>
+								<img src="../img/baño/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Lea</h3>
+								<img src="../img/baño/set4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Cristal</h4>
+								<img src="../img/baño/set5.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Vegas</h3>
+								<img src="../img/baño/set6.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Athina</h3>
+								<img src="../img/baño/set7.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+							<div class="productosC-container">
+								<h3>Set Tania</h3>
+								<img src="../img/baño/set8.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls2"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls2"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 1024 Set-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide medium"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Celeste</h4>
+								<img src="../img/baño/set1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Oriana</h3>
+								<img src="../img/baño/set2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Mali</h3>
+								<img src="../img/baño/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Lea</h4>
+								<img src="../img/baño/set4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Cristal</h3>
+								<img src="../img/baño/set5.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Vegas</h3>
+								<img src="../img/baño/set6.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Athina</h4>
+								<img src="../img/baño/set7.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Tania</h3>
+								<img src="../img/baño/set8.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 768 Set-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide small"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Celeste</h4>
+								<img src="../img/baño/set1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Oriana</h3>
+								<img src="../img/baño/set2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Mali</h4>
+								<img src="../img/baño/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Lea</h3>
+								<img src="../img/baño/set4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Cristal</h4>
+								<img src="../img/baño/set5.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Vegas</h3>
+								<img src="../img/baño/set6.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Athina</h4>
+								<img src="../img/baño/set7.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosC-container">
+								<h3>Set Tania</h3>
+								<img src="../img/baño/set8.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 425 Set -->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide xsmall"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Celeste</h4>
+								<img src="../img/baño/set1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Oriana</h4>
+								<img src="../img/baño/set2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Mali</h4>
+								<img src="../img/baño/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Lea</h4>
+								<img src="../img/baño/set4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Cristal</h4>
+								<img src="../img/baño/set5.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Vegas</h4>
+								<img src="../img/baño/set6.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Athina</h4>
+								<img src="../img/baño/set7.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosC">
+							<div class="productosC-container">
+								<h4>Set Tania</h4>
+								<img src="../img/baño/set8.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
 		</div>
 
 		<footer class="container-fluid">

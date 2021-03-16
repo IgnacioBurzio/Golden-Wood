@@ -1,114 +1,923 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Los muebles para decorar tu cocina o living con estilo y de forma práctica, están acá.">
-    <meta name="keywords" content="muebles, madera, comodidad, cocina, living, sillon, mesada, mesa">
-    <title>Cocina y living</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="icon" type="image/jpg" href="../img/logo.jpg"/>
-    <link rel="stylesheet" href="../assets/css/nav.css">
-    <link rel="stylesheet" href="../assets/scss/footer.css">
-    <link rel="stylesheet" type="text/css" href="../assets/scss/cocinayliving.css">
-    <script src="https://kit.fontawesome.com/811bede37d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header id="desktop">
-        <div class="logo-desktop">
-            <img src="../img/logo.jpg">
-        </div>
-    <nav class="nav_links" id="nav">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./dormitorio.html">Dormitorio</a></li>
-            <li><a href="./cocinayliving.html">Cocina y Living</a></li>
-            <li><a href="./baño.html">Baño</a></li>
-        </ul>
-    </nav>
-    <div class="buscar-desktop">
-        <input class="buscador" type="search" name="buscador" placeholder="Producto...">
-        <input class="boton" type="submit" value="Buscar" placeholder="Producto..." >
-    </div>
-    </header>
-    <div class="fondo-cocina">
-    <h1 class="titulo-cocina">Cocina y living</h1>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Los muebles para decorar tu cocina o living con estilo y de forma práctica, están acá."
+		/>
+		<meta
+			name="keywords"
+			content="muebles, madera, comodidad, cocina, living, sillon, mesada, mesa"
+		/>
+		<title>Cocina y living</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<link rel="icon" type="image/jpg" href="../img/logo.jpg" />
+		<link rel="stylesheet" href="../assets/css/nav.css" />
+		<link rel="stylesheet" href="../assets/scss/footer.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../assets/scss/cocinayliving.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/811bede37d.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!--mobile-->
+		<header id="mobile">
+			<div class="dropdown desplegable_caja">
+				<div class="logo-mobile">
+					<img class="rounded-circle" src="../img/logo.jpg" />
+				</div>
+				<div class="buscar-mobile">
+					<input
+						class="buscador"
+						type="search"
+						name="buscador"
+						placeholder="Producto..."
+					/>
+					<input
+						class="boton"
+						type="submit"
+						value="Buscar"
+						placeholder="Producto..."
+					/>
+				</div>
+				<button
+					class="btn btn-secondary dropdown-toggle boton-desplegable"
+					type="button"
+					id="dropdownMenuButton"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				>
+					<i class="fas fa-bars"></i>
+				</button>
+				<div
+					class="dropdown-menu menu-desplegable"
+					aria-labelledby="dropdownMenuButton"
+				>
+					<a class="dropdown-item" href="../index.html">Home</a>
+					<a class="dropdown-item" href="./nosotros.html">Nosotros</a>
+					<a class="dropdown-item" href="./dormitorio.html">Dormitorio</a>
+					<a class="dropdown-item" href="./cocinayliving.html">Cocina y living</a>
+					<a class="dropdown-item" href="./baño.html">Baño</a>
+				</div>
+			</div>
+		</header>
 
-    <div class="productosB">
+		<!--desktop-->
+		<header id="desktop">
+			<div class="logo-desktop">
+				<img src="../img/logo.jpg" />
+			</div>
+			<nav class="nav_links" id="nav">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./nosotros.html">Nosotros</a></li>
+					<li><a href="./dormitorio.html">Dormitorio</a></li>
+					<li><a href="./cocinayliving.html">Cocina y Living</a></li>
+					<li><a href="./baño.html">Baño</a></li>
+				</ul>
+			</nav>
+			<div class="buscar-desktop">
+				<input
+					class="buscador"
+					type="search"
+					name="buscador"
+					placeholder="Producto..."
+				/>
+				<input
+					class="boton"
+					type="submit"
+					value="Buscar"
+					placeholder="Producto..."
+				/>
+			</div>
+		</header>
+		<div class="fondo-cocina">
+			<h1 class="titulo-cocina">Cocina y living</h1>
+		</div>
 
-        <div class="productosB-container">
-            <h4>Mesa Rain</h4>
-            <img src="../img/cocina y living/mesa1.webp">
-            <h4>$5000</h4>
-            <button class="boton-carrito">Agregar al carrito</button>
-        </div>
+		<div id="row-1">
+			<!-- 1440 Mesa e isla -->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide large"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Canela</h4>
+								<img src="../img/cocinayliving/mesa1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-        <div class="productosB-container">
-            <h3>Mesa Sun</h3>
-            <img src="../img/cocina y living/mesa2.webp">
-            <h4>$5000</h4>
-            <button class="boton-carrito">Agregar al carrito</button>
-        </div>
+							<div class="productosB-container">
+								<h3>Mesa Leda</h3>
+								<img src="../img/cocinayliving/mesa2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-        <div class="productosB-container">
-            <h3>Armario extraíble</h3>
-            <img src="../img/cocina y living/extraible.webp">
-            <h4>$1500</h4>
-            <button class="boton-carrito">Agregar al carrito</button>
-        </div>
+							<div class="productosB-container">
+								<h3>Mesa Tasya</h3>
+								<img src="../img/cocinayliving/mesa3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-        <div class="productosB-container">
-            <h3>Silla</h3>
-            <img src="../img/cocina y living/silla.webp">
-            <h4>$1200</h4>
-            <button class="boton-carrito">Agregar al carrito</button>
-        </div>
+							<div class="productosB-container">
+								<h3>Mesa Olivia</h3>
+								<img src="../img/cocinayliving/mesa4.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Fátima</h4>
+								<img src="../img/cocinayliving/mesa5.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-        <div class="productosB-container">
-            <h4>Armario</h4>
-            <img src="../img/cocina y living/armario.jpg">
-            <h4>$3000</h4>
-            <button class="boton-carrito">Agregar al carrito</button>
-        </div>
-    </div>
+							<div class="productosB-container">
+								<h3>Mesa Wanda</h3>
+								<img src="../img/cocinayliving/mesa6.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-    <div class="ventas">
-        <div class="ventas-titulo">
-            <h2>Qué podés encontrar acá?</h2>
-            <ul>
-            <li>Mesas</li>
-            <li>Sillas</li>
-            <li>Gabinetes</li>
-            <li>Estantes</li>
-            </ul>
-        </div>
-    </div>
-    <footer class="container-fluid">
-        <div id="contacto" class="row">
-            <div class="contacto-lista col-lg-6 col-md-12" >
-            <h3>Contactanos</h3>
-            <ul>
-                <li>El Salvador 4600, CABA</li>
-                <li>4797-3502</li>
-                <li>goldenwood@gmail.com</li>
-            </ul>
-            </div>
-            <div class="contacto-redes col-lg-6 col-md-12">
-            <h3>Redes</h3>
-            <h4 class="redes">Seguinos en <a href="https://www.instagram.com/" target=_BLANK>Instagram</a> y <a href="https://es-la.facebook.com/" target=_BLANK>Facebook</a> para enterarte de todo!</h4> <!-- falta crear paginas-->
-            </div>
-        </div>
-        <div class="row">
-            <h6 class="col-12">Derechos Reservados</h6>
-            
-        </div> 
-    </footer>
+							<div class="productosB-container">
+								<h3>Isla Helia</h3>
+								<img src="../img/cocinayliving/isla1.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+							<div class="productosB-container">
+								<h3>Isla Rajel</h3>
+								<img src="../img/cocinayliving/isla2.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 1024 Mesa e isla-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide medium"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Cama Angélica</h4>
+								<img src="../img/cocinayliving/mesa1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+							<div class="productosB-container">
+								<h3>Mesa Leda</h3>
+								<img src="../img/cocinayliving/mesa2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
 
-</body>
+							<div class="productosB-container">
+								<h3>Mesa Tasya</h3>
+								<img src="../img/cocinayliving/mesa3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Olivia</h4>
+								<img src="../img/cocinayliving/mesa4.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Mesa Fátima</h3>
+								<img src="../img/cocinayliving/mesa5.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Mesa Wanda</h3>
+								<img src="../img/cocinayliving/mesa6.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Isla Helia</h4>
+								<img src="../img/cocinayliving/isla1.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Isla Rajel</h3>
+								<img src="../img/cocinayliving/isla2.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 768 Mesa e isla-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide small"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Cama Angélica</h4>
+								<img src="../img/cocinayliving/mesa1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Mesa Leda</h3>
+								<img src="../img/cocinayliving/mesa2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Tasya</h4>
+								<img src="../img/cocinayliving/mesa3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Mesa Olivia</h3>
+								<img src="../img/cocinayliving/mesa4.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Fátima</h4>
+								<img src="../img/cocinayliving/mesa5.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Mesa Wanda</h3>
+								<img src="../img/cocinayliving/mesa6.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Isla Helia</h4>
+								<img src="../img/cocinayliving/isla1.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Isla Rajel</h3>
+								<img src="../img/cocinayliving/isla2.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 425 Mesa e isla -->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide xsmall"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Cama Angélica</h4>
+								<img src="../img/cocinayliving/mesa1.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Leda</h4>
+								<img src="../img/cocinayliving/mesa2.webp" />
+								<h4>$12000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Tasya</h4>
+								<img src="../img/cocinayliving/mesa3.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Olivia</h4>
+								<img src="../img/cocinayliving/mesa4.webp" />
+								<h4>$10000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Fátima</h4>
+								<img src="../img/cocinayliving/mesa5.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Mesa Wanda</h4>
+								<img src="../img/cocinayliving/mesa6.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Isla Helia</h4>
+								<img src="../img/cocinayliving/isla2.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Isla Rajel</h4>
+								<img src="../img/cocinayliving/isla2.webp" />
+								<h4>$8000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="row-2">
+			<!-- 1440 Sillón y Set -->
+			<div
+				id="carouselExampleControls2"
+				class="carousel slide large"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Jackie</h4>
+								<img src="../img/cocinayliving/sillon1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Grisel</h3>
+								<img src="../img/cocinayliving/sillon2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Thelma</h3>
+								<img src="../img/cocinayliving/sillon3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Pilar</h3>
+								<img src="../img/cocinayliving/sillon4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Ona</h4>
+								<img src="../img/cocinayliving/set1.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Vega</h3>
+								<img src="../img/cocinayliving/set2.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Tessa</h3>
+								<img src="../img/cocinayliving/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+							<div class="productosB-container">
+								<h3>Set Palma</h3>
+								<img src="../img/cocinayliving/set4.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls2"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls2"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 1024 Sillón y Set-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide medium"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Jackie</h4>
+								<img src="../img/cocinayliving/sillon1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Grisel</h3>
+								<img src="../img/cocinayliving/sillon2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Thelma</h3>
+								<img src="../img/cocinayliving/sillon3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Pilar</h4>
+								<img src="../img/cocinayliving/sillon4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Ona</h3>
+								<img src="../img/cocinayliving/set1.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Vega</h3>
+								<img src="../img/cocinayliving/set2.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Tessa</h4>
+								<img src="../img/cocinayliving/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Palma</h3>
+								<img src="../img/cocinayliving/set4.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 768 Sillón y Set-->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide small"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Jackie</h4>
+								<img src="../img/cocinayliving/sillon1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Grisel</h3>
+								<img src="../img/cocinayliving/sillon2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Thelma</h4>
+								<img src="../img/cocinayliving/sillon3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Sillón Pilar</h3>
+								<img src="../img/cocinayliving/sillon4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Ona</h4>
+								<img src="../img/cocinayliving/set1.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Vega</h3>
+								<img src="../img/cocinayliving/set2.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Tessa</h4>
+								<img src="../img/cocinayliving/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+
+							<div class="productosB-container">
+								<h3>Set Palma</h3>
+								<img src="../img/cocinayliving/set4.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!-- 425 Sillón y Set -->
+			<div
+				id="carouselExampleControls"
+				class="carousel slide xsmall"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Jackie</h4>
+								<img src="../img/cocinayliving/sillon1.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Grisel</h4>
+								<img src="../img/cocinayliving/sillon2.webp" />
+								<h4>$20000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Thelma</h4>
+								<img src="../img/cocinayliving/sillon3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Sillón Pilar</h4>
+								<img src="../img/cocinayliving/sillon4.webp" />
+								<h4>$15000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Ona</h4>
+								<img src="../img/cocinayliving/set1.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Vega</h4>
+								<img src="../img/cocinayliving/set2.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Tessa</h4>
+								<img src="../img/cocinayliving/set3.webp" />
+								<h4>$25000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="productosB">
+							<div class="productosB-container">
+								<h4>Set Palma</h4>
+								<img src="../img/cocinayliving/set4.webp" />
+								<h4>$30000</h4>
+								<button class="boton-carrito">Agregar al carrito</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a
+					class="carousel-control-prev changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next changeColor"
+					href="#carouselExampleControls"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<footer class="container-fluid">
+			<div id="contacto" class="row">
+				<div class="contacto-lista col-lg-6 col-md-12">
+					<h3>Contactanos</h3>
+					<ul>
+						<li>El Salvador 4600, CABA</li>
+						<li>4797-3502</li>
+						<li>goldenwood@gmail.com</li>
+					</ul>
+				</div>
+				<div class="contacto-redes col-lg-6 col-md-12">
+					<h3>Redes</h3>
+					<h4 class="redes">
+						Seguinos en
+						<a href="https://www.instagram.com/" target="_BLANK">Instagram</a> y
+						<a href="https://es-la.facebook.com/" target="_BLANK">Facebook</a> para
+						enterarte de todo!
+					</h4>
+					<!-- falta crear paginas-->
+				</div>
+			</div>
+			<div class="row">
+				<h6 class="col-12">Derechos Reservados</h6>
+			</div>
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+			integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

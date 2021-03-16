@@ -16,10 +16,19 @@ footer {
 
 .contacto-lista {
 	@include flexCenter();
+	h3 {
+		color: gainsboro;
+	}
 }
 
 .contacto-redes {
 	@include flexCenter();
 	text-align: center;
 	padding: 2em 0;
+	h3 {
+		color: gainsboro;
+	}
+	h4 {
+		color: grey;
+	}
 }

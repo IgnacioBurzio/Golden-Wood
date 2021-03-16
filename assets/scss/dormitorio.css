@@ -7,36 +7,33 @@
 }
 
 .fondo-dormitorio {
-  background: url(../../img/fotodormitorio.jpg) no-repeat;
+  background: url(../../img/dormitorio.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   position: relative;
 }
 
 .titulo-dormitorio {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
-  font-size: 100px;
+  font-size: 150px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.ventas {
-  background-color: burlywood;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 .productosA {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  background-color: #f5f5f0;
 }
 
 .productosA-container {
@@ -82,5 +79,68 @@
 .boton-carrito:hover {
   background-color: silver;
   color: black;
+}
+
+.large {
+  display: none;
+}
+
+.medium {
+  display: none;
+}
+
+.small {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .large {
+    display: none;
+  }
+  .medium {
+    display: none;
+  }
+  .small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .xsmall {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .large {
+    display: none;
+  }
+  .medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .small {
+    display: none;
+  }
+  .xsmall {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .medium {
+    display: none;
+  }
+  .small {
+    display: none;
+  }
+  .xsmall {
+    display: none;
+  }
 }
 /*# sourceMappingURL=dormitorio.css.map */
