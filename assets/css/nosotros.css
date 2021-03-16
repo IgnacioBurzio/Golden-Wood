@@ -16,7 +16,7 @@
 .titulo-nosotros {
 	font-family: 'Montserrat', sans-serif;
 	position: absolute;
-	font-size: 150px;
+	font-size: 120px;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -37,6 +37,10 @@
 	.titulo-nosotros {
 		font-size: 70px;
 	}
+}
+
+#datos-contacto {
+	padding-top: 20px;
 }
 
 .ubicacion {

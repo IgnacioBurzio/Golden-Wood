@@ -52,4 +52,11 @@ footer {
 .contacto-redes h4 {
   color: grey;
 }
+
+.instagram,
+.facebook {
+  font-size: 50px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
 /*# sourceMappingURL=footer.css.map */

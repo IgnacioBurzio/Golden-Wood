@@ -60,6 +60,8 @@
 					class="dropdown-menu menu-desplegable"
 					aria-labelledby="dropdownMenuButton"
 				>
+					<i class="fas fa-user usuario"></i>
+					<i class="fas fa-shopping-cart carrito"></i>
 					<a class="dropdown-item" href="../index.html">Home</a>
 					<a class="dropdown-item" href="./nosotros.html">Nosotros</a>
 					<a class="dropdown-item" href="./dormitorio.html">Dormitorio</a>
@@ -84,6 +86,8 @@
 				</ul>
 			</nav>
 			<div class="buscar-desktop">
+				<i class="fas fa-user usuario"></i>
+				<i class="fas fa-shopping-cart carrito"></i>
 				<input
 					class="buscador"
 					type="search"
@@ -103,10 +107,8 @@
 			<h1 class="titulo-nosotros">Nosotros</h1>
 		</div>
 
-		<br />
-
 		<section class="informacion">
-			<div id="ubicacion">
+			<div id="datos-contacto">
 				<div class="ubicacion">
 					<div class="ubicacion-direccion">
 						<h4>PALERMO HOLLYWOOD</h4>
@@ -129,22 +131,18 @@
 				</div>
 			</div>
 
-			<br />
-			<br />
-			<div id="formulario">
-				<form>
-					<h4>Suscribite para recibir más novedades y descuentos</h4>
-					<br />
-					<div class="form-row">
-						<div class="col">
-							<input type="text" class="form-control" placeholder="Nombre" />
-						</div>
-						<div class="col">
-							<input type="text" class="form-control" placeholder="Apellido" />
-						</div>
+			<form class="container my-3">
+				<div class="row text-center">
+					<h4 class="col-12">Suscribite para recibir más novedades y descuentos</h4>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-12 my-2">
+						<input type="text" class="form-control" placeholder="Nombre" />
 					</div>
-					<br />
-					<div class="form-group">
+					<div class="col-md-6 col-12 my-2">
+						<input type="text" class="form-control" placeholder="Apellido" />
+					</div>
+					<div class="my-2 col-12">
 						<input
 							type="email"
 							class="form-control"
@@ -152,12 +150,8 @@
 							aria-describedby="emailHelp"
 							placeholder="Email"
 						/>
-						<small id="emailHelp" class="form-text text-muted"
-							>Nunca compartiremos tu correo con nadie más.</small
-						>
 					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Contraseña</label>
+					<div class="col-12 my-2">
 						<input
 							type="password"
 							class="form-control"
@@ -165,16 +159,17 @@
 							placeholder="Contraseña"
 						/>
 					</div>
-					<div class="form-check">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-						<label class="form-check-label" for="exampleCheck1"
-							>Quiero recibir emails</label
-						>
-					</div>
-					<br />
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+					<label class="form-check-label" for="exampleCheck1"
+						>Quiero recibir emails</label
+					>
+				</div>
+				<div class="text-right">
 					<button type="submit" class="btn btn-primary">Suscribirme</button>
-				</form>
-			</div>
+				</div>
+			</form>
 		</section>
 
 		<footer class="container-fluid">
@@ -188,13 +183,15 @@
 					</ul>
 				</div>
 				<div class="contacto-redes col-lg-6 col-md-12">
-					<h3>Redes</h3>
-					<h4 class="redes">
-						Seguinos en
-						<a href="https://www.instagram.com/" target="_BLANK">Instagram</a> y
-						<a href="https://es-la.facebook.com/" target="_BLANK">Facebook</a> para
-						enterarte de todo!
-					</h4>
+					<h3>Nuestras redes</h3>
+					<div class="redes">
+						<a href="https://www.instagram.com/" target="_BLANK"
+							><i class="fab fa-instagram instagram"></i
+						></a>
+						<a href="https://es-la.facebook.com/" target="_BLANK"
+							><i class="fab fa-facebook facebook"></i
+						></a>
+					</div>
 					<!-- falta crear paginas-->
 				</div>
 			</div>

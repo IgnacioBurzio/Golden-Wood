@@ -17,7 +17,7 @@
 .titulo-baño {
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  font-size: 150px;
+  font-size: 120px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -92,10 +92,6 @@
 
 .small {
   display: none;
-}
-
-.changeColor > .carousel-control-next-icon {
-  background: #000;
 }
 
 @media (min-width: 768px) {
